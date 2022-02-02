@@ -1,0 +1,622 @@
+﻿
+html {
+    
+}
+
+body {
+    color: #262626;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1247px;
+    max-height: 728px;
+    
+}
+.containers {
+    max-width: 1247px;
+    height: 138px;
+    
+}
+
+#site_logo {   
+    position: relative;    
+}
+
+
+header {
+    border-bottom: 1px solid;
+    border-bottom-color: #F0F0F0;
+    height: 45px;
+    width: 1247px;
+}
+
+nav {
+    border: solid 1px #F0F0F0;
+    width: 1247px;
+}
+
+    nav ul {
+        list-style: none;
+        display: inline-flex;
+    }
+
+        nav ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    nav li {
+        width: 80px;        
+        padding-left: 150px;
+        margin : 0 auto;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: #262626;
+    }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+#list-name {
+    display: inline-flex;
+    width: 1240px;
+}
+
+    #list-name h1 {
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: 1px solid #F0F0F0;
+    }
+
+.contents {
+    flex-basis: 50%;
+    min-width: 1247px;
+}
+
+.btn-img {
+    display: flex;
+    position: relative;
+    background: #efefef;
+    margin: 20px 0 0 100px;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+}
+
+.thum-img {
+    position: relative;
+}
+
+    .thum-img img {
+        width: 250px;
+        margin-bottom: -6px;
+    }
+
+    
+
+ 
+
+.name-title {
+    display: block;
+    position: absolute;
+    padding-left: 28%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.performer {
+    display: block;
+    position: absolute;
+    padding-left: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+.performer1 {         /*映画*/
+    display: block;
+    position: absolute;
+    padding-left: 57%;
+    margin: 0 auto;
+    text-align: center;
+}
+.performer2 {         /*映画*/
+    display: block;
+    position: absolute;
+    padding-left: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-url {
+    display: block;
+    position: absolute;
+    padding-left: 88%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.thum-img .play-btn {
+    width: 35%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.video-player {
+    position: fixed;
+    display: none;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 90%;
+    box-shadow: 0 0 0 150vh rgba(0,0,0, .7);
+    z-index: 1;
+
+}
+
+video:focus {
+    outline: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/*PC*/
+#header-nav-wrap {
+    height: 25px;
+    width: 100%;   
+    border-bottom: 1px solid #f7f7f7;
+}
+
+#header-nav {
+    margin: 0 auto;    
+    width: 1024px;   
+}
+
+ul {
+    list-style: none;
+}
+
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.tab-label {
+    position: relative;
+    margin: 1px -300px 5px 350px;
+    padding: 0 15px;
+    background-color: transparent;
+    order: -1;
+    cursor: pointer;
+}
+
+.tab-content {
+    width: 100%;
+    display: none;
+}
+/* アクティブなタブ */
+.tab-switch:checked + .tab-label {
+    color: red;    
+}
+
+    .tab-switch:checked + .tab-label + .tab-content {
+        display: block;
+    }
+/* ラジオボタン非表示 */
+.tab-switch {
+    display: none;
+}
+
+
+
+.index{
+    text-align:center;
+}
+
+.index ul{
+    display:inline-flex;
+    list-style:none;
+}
+
+.index ul li{
+    width: 30px;
+    margin:15px;
+    padding:15px;
+    background-color:red;
+}
+
+.index ul li a{
+    text-decoration:none;
+    color:#262626;   
+}
+
+.index-sub {
+    display: none;
+    width: 30px;
+    margin:15px;
+    padding:15px;
+}
+
+.index ul li:hover .index-sub {
+    display: block;
+    position: absolute;
+    padding-top:10px;
+   
+}
+
+    .index ul li:hover .index-sub ul {
+        display: block;
+       
+    }
+
+        .index ul li:hover .index-sub ul li {
+            width: 30px;
+            padding: 15px;
+            margin-left: -85px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: center;
+            background-color: red;
+            z-index: 100;
+        }
+
+
+
+.title {
+    position: relative;
+    text-align: center;
+    left:-15px;
+   
+}
+
+    .title h1 {
+        position: absolute;
+        display: inline-block;
+        
+    }
+
+.index ul li {
+    width: 70px;
+    margin-left: 0px;
+}
+
+    .index ul li a {
+        font-size: 30px;
+    }
+
+    .index ul li:hover .index-sub ul li {
+        width: 70px;
+    }
+
+.list {
+    margin: 2em 0;
+    padding: 0;
+    width: 1247px;
+}
+
+    .list label {
+        display: block;
+        padding: 0px;
+        color: #fff;
+        font-weight: bold;
+        background: #F0F0F0;
+        cursor: pointer;
+    }
+
+    .list input[type="checkbox"] {
+        display: none;
+    }
+
+    .list .index1 {
+        text-align: center;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-bottom: 5px;
+        border: 1px solid #F0F0F0;
+    }
+
+        .list .index1 ul {
+            display: inline-flex;
+            list-style: none;
+        }
+
+            .list .index1 ul li {
+                width: 30px;
+                margin: 15px;
+                padding: 15px;
+                background-color: red;
+            }
+
+                .list .index1 ul li a {
+                    display: block;
+                    text-decoration: none;
+                    color: #262626;
+                }
+
+.index-sub1 {
+    margin-top: -200px;
+}
+
+.switch:checked + .index1 {
+    height: auto;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.list .index2 {
+    text-align: center;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border: 1px solid #F0F0F0;
+}
+
+    .list .index2 ul {
+        display: inline-flex;
+        list-style: none;
+    }
+
+        .list .index2 ul li {
+            width: 30px;
+            margin: 15px;
+            padding: 15px;
+            background-color: red;
+        }
+
+            .list .index2 ul li a {
+                display: block;
+                text-decoration: none;
+                color: #262626;
+            }
+
+.index-sub2 {
+    margin-top: -200px;
+}
+
+.switch:checked + .index2 {
+    height: auto;
+    padding: 8px;
+    background-color: transparent;
+}
+
+/*スマホ*/
+.sp-tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+}
+
+.sp-tab-label {
+    position: relative;
+    margin: 5px -400px 5px 400px;
+    padding: 0 20px;
+    background-color: transparent;
+    order: -1;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.sp-tab-content {
+    width: 100%;
+    display: none;
+}
+/* アクティブなタブ */
+.sp-tab-switch:checked + .sp-tab-label {
+    color: red;
+}
+
+    .sp-tab-switch:checked + .sp-tab-label + .sp-tab-content {
+        display: block;
+    }
+/* ラジオボタン非表示 */
+.sp-tab-switch {
+    display: none;
+}
+
+
+
+        @media only screen and (max-width: 428px) { /*iphone*/
+
+            /* サイト共通コンテナ */
+            .error {
+                display: none;
+            }
+
+            #site_logo img {
+                height: 45px;
+            } 
+
+            
+            .btn-img{
+               width:80%;
+               height:100%;
+            }
+
+            .video-player {
+                top: 50%;
+                height: 25%;
+                width: 100%;
+            }
+           
+        }
+
+
+
+        @media only screen and (max-width: 822px) {
+
+            .error {
+                display: none;
+            }
+
+            #site_logo {
+                padding-left: 7%;
+            }
+
+            nav li{
+                padding-left:50px;
+            }
+
+            nav a {
+                width: 250px;
+                font-size:35px;
+            }                     
+
+            .list{
+                     display:none;
+            }
+
+            .tab-wrap {
+                display: none;
+            }
+
+            .video-player {
+                top: 50%;
+                height: 25%;
+                width: 100%;
+            }
+
+            .contents, #list-name {
+                padding-left: 5%;
+            }   
+
+        }
+
+
+
+
+
+
+
+        @media only screen and (max-width: 1024px) {
+
+            .error {
+                display: none;
+            }
+
+            
+
+            nav li {
+                float: left;
+                width: 100%;
+            }           
+           
+           
+        }
+
+
+
+        @media only screen and (min-width: 1240px) { /*PC*/
+
+            .error {
+                display: none;
+            }
+
+            
+
+            .index{
+               display:none;            
+            }
+
+            nav li {
+                width:25%;
+                
+            }
+
+            nav a {
+                width: 150px;
+                
+            }
+
+
+            .list{
+                width:100%;
+            }
+
+            .containers, .sp-tab-wrap {
+                display: none;
+            }
+
+            #site_logo {
+                padding-left: 12%;
+            }
+            
+
+        }
+
+@media only screen and (min-width: 1285px) { /*PC*/
+
+    .error {
+        display: none;
+    }    
+
+    nav {
+        width: 100%;
+    }
+        
+
+        nav li {
+            width: 25%;
+            padding-left:190px;
+        }
+
+        nav a {
+            width: 150px;
+        }
+
+
+    .list {
+        width: 100%;
+    }
+    .containers, .sp-tab-wrap {
+        display: none;
+    }
+
+    .contents, #list-name{
+        padding-left:10%;
+    }   
+
+        #site_logo {            
+            padding-left: 16%;
+        }
+
+
+    .tab-label {
+        position: relative;
+        margin: 1px -17% 5px 25%;
+        padding: 1px 15px;
+    }
+
+    body {
+        overflow-y: hidden;
+        overflow-y: scroll;
+    }
+   
+}
+
