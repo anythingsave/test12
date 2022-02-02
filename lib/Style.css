@@ -19,7 +19,7 @@ a {
 }
 .containers {
     max-width: 1247px;
-    height: 138px;
+    max-height: 2400px;
     
 }
 
